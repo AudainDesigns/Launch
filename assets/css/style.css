@@ -1,0 +1,448 @@
+/*!
+ * Temlate Name: Launch
+ * Version: 1.0
+ * Author: Justin Audain
+ * License: Creative Commons Attribution 3.0 License
+ * Website: http://themes.audaindesigns.com
+ */
+
+/*-Base-*/
+
+body {
+	background-color:#ECEBEB;
+	font-family: 'Open Sans', sans-serif;
+}
+p {
+	color:#A7A7A7;
+}
+a { 
+	color:#85AD90;
+}
+
+/*-Header-*/
+.header {
+	background-color: #99DEAB;
+	border-bottom: 5px solid #85AD90;
+	padding: 30px 0px;
+}
+.goal-summary {
+	padding: 0px 40px;
+}
+.goal-summary .backers, .goal-summary .funded, .goal-summary .time-left, .goal-summary .reminder {
+	margin: 10px 20px 10px 0px;
+	padding-right: 20px;
+	display: inline-block;
+	border-right: 1px solid rgba(255, 255, 255, 0.39);
+}
+.goal-summary .reminder.last {
+	border:0;
+}
+.goal-summary .backers h3, .goal-summary .funded h3, .goal-summary .time-left h3 {
+	background-color:#fff;
+	padding:5px;
+	margin:0px 0px 5px 0px;
+	display:table;
+	border-radius:4px;
+	color:#85AD90;
+}
+.goal-summary .backers span, .goal-summary .funded span, .goal-summary .time-left span {
+	color:#fff;
+}
+.goal-summary .reminder a {
+	background-color:#fff;
+	padding:8px;
+	margin:0px 0px 10px 0px;
+	display:table;
+	border-radius:4px;
+	text-decoration:none;
+}
+.goal-summary .reminder a:hover, .goal-summary .reminder a:focus {
+	background-color:#85AD90;
+	color:#fff;
+}
+@media (max-width: 767px) {
+	.goal-summary {
+		text-align: center;
+		padding: 0px 40px;
+	}
+}
+@media (max-width: 480px) {
+	.goal-summary {
+		padding: 0px;
+	}
+}
+
+/*-Section Blocks-*/
+.section-block {
+	background-color: #F7F7F7;
+	border-radius:4px;
+	padding: 30px;
+	margin-bottom:30px;
+}
+.section-block.summary {
+    background-color: #99DEAB;
+}
+.section-block.summary h1 {
+    color: #fff;
+	display:block;
+	text-align:center;
+}
+.section-block.transparent {
+	background-color:transparent
+}
+.section-block.signup {
+	background-color: #99DEAB;
+}
+.section-block h1 {
+	margin-top:0;
+}
+.section-title {
+	color: #99DEAB;
+	border-radius: 4px;
+	display: table;
+	padding: 10px 0px;
+	font-size: 25px;
+	font-weight:700;
+}
+
+/*-Main Content-*/
+.main-content {
+	padding:40px 0px;
+}
+
+/*-Profile Summary-*/
+.profile-contents {
+	margin: 0 auto;
+    text-align: center;
+}
+.profile-contents h2 {
+	color:#FFF;
+	font-size: 16px;
+	line-height: 1.5;
+	font-weight:300;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+.profile-image {
+	border-radius:50%;
+	max-height: 180px;
+	margin-bottom:10px;
+}
+.profile-contents ul li {
+	padding:0;
+	margin:5px;
+}
+.profile-contents ul li a {
+	background-color: #85AD90;
+	color: #FFF;
+	height: 40px;
+	width: 40px;
+	display: inline-block;
+	text-align: center;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+}
+.profile-contents ul li a i.fa {
+	font-size: 20px;
+	margin-top: 10px;
+}
+.profile-contents ul li a:hover {
+	background-color:#779A81;
+}
+
+/*-Funding Meta-*/
+.funding-meta {}
+.funding-meta h1 {
+	background: #99DEAB;
+	color: #fff;
+	border-radius: 4px;
+	display: table;
+	padding: 10px;
+	font-size: 25px;
+	font-weight:700;
+}
+.type-meta {
+	color:#A7A7A7;
+	font-size: 12px;
+	display: inline-block;
+	margin: 0px 10px 10px 0px;
+}
+.type-meta i.fa {
+	color:#99DEAB;
+	margin-right:5px;
+}
+.funding-meta h2{
+	font-weight:700;
+}
+.funding-meta p {
+	color: #A7A7A7;
+	margin: 30px 0px 10px 0px;
+}
+.video-frame {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+	display:block;
+}
+.video-frame iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.funding-meta h2, .funding-meta span.contribution {
+	display:inline-block;
+	color: #85AD90;
+}
+.funding-meta span.contribution, .funding-meta span.goal-progress {
+	color: #A7A7A7;
+}
+.funding-meta span.goal-progress {
+	text-align:right;
+	display: block;
+}
+.count-down {
+	display: block;
+	color: #A7A7A7;
+	text-align: right;
+	text-transform: uppercase;
+}
+.count-down strong {
+	padding-right:5px;
+}
+.progress-bar {
+	background-color: #99DEAB;
+	box-shadow:none;
+}
+.progress {
+	height: 30px;
+	background-color: #ECEBEB;
+	box-shadow:none;
+	margin: 10px 0px 10px 0px;
+}
+
+/*-Rewards-*/
+.reward-block {
+	position:relative;
+	background-color: #fff;
+	border-radius: 4px;
+	padding: 20px;
+	margin-bottom:10px;
+}
+.reward-block:hover {
+	background-color: #DCF7E3;
+}
+.reward-block.last {
+	margin-bottom:0;
+}
+.reward-block h3 {
+	background: #99DEAB;
+	color: #fff;
+	font-size: 15px;
+	font-weight: 700;
+	margin: 0px 0px 10px 0px;
+	padding: 10px;
+	display: table;
+	border-radius: 4px;
+}
+.reward-block h2 {
+	font-size: 20px;
+	font-weight: 300;
+	color: #99DEAB;
+	margin: 15px 0px;
+}
+.reward-block i.fa {
+	color:#99DEAB;
+}
+.reward-block span {
+	margin-bottom: 10px;
+	display: block;
+	color: #A7A7A7;
+}
+.reward-block.popular:after {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	content: "popular";
+	background-color: #2ED9EA;
+	color: #fff;
+	padding: 5px;
+	border-radius: 4px;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+/*-Sign up form-*/
+.sign-up-form {
+	text-align: center;
+}
+.sign-up-form p {
+	font-weight:700;
+	color:#fff;
+}
+.signup-input {
+	width: 100%;
+	border: 0;
+	padding: 10px;
+	border-radius: 4px;
+	max-width: 400px;
+}
+@media (max-width: 767px) {
+	.signup-input {
+		width: 75%;
+		max-width: 100%%;
+	}
+}
+@media (max-width: 480px) {
+	.signup-input {
+		width: 100%;
+		max-width: 100%%;
+	}
+	.sign-up-form .btn.btn-signup {
+		margin:10px 0px;
+		width:100%;
+		display:block;
+	}
+}
+
+/*-Tabs-*/
+.nav-tabs {
+	border:0;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+	color: #FFF;
+	background-color: #99DEAB;
+	border: 0;
+	border-radius: 4px;
+	font-weight:700;
+}
+.nav-tabs>li>a, .nav-tabs>li>a:hover {
+	border:0;
+	margin-right: 10px;
+	color:#A7A7A7;
+}
+.tab-content .section-title {
+	margin-bottom: 20px;
+	border-bottom: 1px solid #E2E2E2;
+	display: block;
+}
+
+/*-Updates-*/
+.update-post {
+	margin-bottom: 30px;
+	padding: 10px;
+	background-color: #FDFDFD;
+	border-radius: 4px;
+}
+.update-post .update-title {
+	margin: 10px 0px;
+	font-weight: 700;
+}
+.update-post .update-date {
+	margin: 0px 0px 15px 0px;
+	display: block;
+	color: #A7A7A7;
+	font-size: 12px;
+}
+
+
+
+/*-Buttons-*/
+.btn {
+	border:0;
+}
+.btn.btn-launch {
+	background-color: #99DEAB;
+	color: #FFF;
+	font-size: 17px;
+	font-weight: 600;
+	padding: 10px 25px;
+}
+.btn.btn-launch:hover, .btn.btn-launch:focus,.btn.btn-reward, .btn.btn-reward:hover, .btn.btn-reward :focus {
+	background-color:#85AD90;
+	box-shadow:none;
+}
+.btn.btn-reward {
+	background-color: #99DEAB;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 5px 15px;
+}
+.btn.btn-signup {
+	background-color: #99DEAB;
+	color: #fff;
+	height: 40px;
+	width: 43px;
+	margin-left: 10px;
+	border: 2px solid #fff;
+	text-align: center;
+}
+.btn.btn-contact {
+	background-color: #85AD90;
+	color: #fff;
+	font-weight:700;
+}
+.btn.btn-contact:hover, .btn.btn-contact:focus {
+	background-color: #779A81;
+}
+.btn.btn-contact i.fa {
+	margin-right:10px;
+}
+.btn.btn-follow {
+	background-color: #81A8F1;
+	color: #fff;
+	margin-bottom:10px;
+}
+.btn.btn-download {
+	background-color: #85AD90;
+	color: #fff;
+}
+
+/*-Credits-*/
+.credit-block {
+	padding: 20px;
+	background-color: #FFF;
+	border-radius: 4px;
+	margin-bottom: 10px;
+}
+.credit-block.sources a{
+	margin: 10px 0px;
+	display: block;
+}
+.credit-block.license a.lined{
+	text-decoration:underline;
+}
+.credit-block i.fa {
+	padding-right:10px;
+}
+
+/*-Footer-*/
+.footer {
+	background-color: #85AD90;
+	padding: 10px;
+	text-align:center;
+}
+.copyright {
+	color:#F7F7F7;
+}
+.copyright a {
+	background: #fff;
+	color: #85AD90;
+	padding: 0px 5px;
+	margin-left: 4px;
+	border-radius: 4px;
+	font-size: 12px;
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 2px;
+}
+
+/*-Overrides-*/
+.btn, input{
+	outline:none;
+	{
